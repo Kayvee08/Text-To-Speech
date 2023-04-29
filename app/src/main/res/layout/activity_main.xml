@@ -23,8 +23,8 @@
         android:layout_marginHorizontal="12dp"
         android:layout_marginTop="12dp"
         android:padding="12dp"
-        app:endIconMode="clear_text"
         app:endIconDrawable="@drawable/ic_close"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/locale_option"
         app:layout_constraintTop_toTopOf="parent">
@@ -35,7 +35,7 @@
             android:ellipsize="end"
             android:hint="Enter the text"
             android:maxLines="20"
-            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus elementum sagittis vitae et leo duis. Fusce ut placerat orci nulla pellentesque dignissim enim sit. Orci porta non pulvinar neque laoreet suspendisse interdum. Ullamcorper sit amet risus nullam eget felis. Neque sodales ut etiam sit amet. Varius duis at consectetur lorem donec. Ac turpis egestas integer eget aliquet nibh praesent. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Est sit amet facilisis magna etiam tempor orci." />
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus elementum sagittis vitae et leo duis. Fusce ut placerat orci nulla pellentesque dignissim enim sit. Orci porta non pulvinar neque laoreet suspendisse interdum. Ullamcorper sit amet risus nullam eget felis. Neque sodales ut etiam sit amet. Varius duis at consectetur lorem donec. Ac turpis egestas integer eget aliquet nibh praesent. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Est sit amet facilisis magna etiam tempor orci. kjdhf kh jshd kjdsh ksdh kdsh kjsjkshf ksdjh fjks Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus elementum sagittis vitae et leo duis. Fusce ut placerat orci nulla pellentesque dignissim enim sit. Orci porta non pulvinar neque laoreet suspendisse interdum. Ullamcorper sit amet risus nullam eget felis. Neque sodales ut etiam sit amet. Varius duis at consectetur lorem donec. Ac turpis egestas integer eget aliquet nibh praesent. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Est sit amet facilisis magna etiam tempor orci. kjdhf kh jshd kjdsh ksdh kdsh kjsjkshf ksdjh fjks" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -43,9 +43,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
+        android:gravity="fill_horizontal"
         android:orientation="horizontal"
         android:paddingHorizontal="12dp"
-        android:gravity="fill_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txt">
@@ -54,8 +54,8 @@
             android:id="@+id/speak"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/speak"
             android:layout_weight="1"
+            android:text="@string/speak"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txt" />
@@ -63,18 +63,30 @@
         <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/stop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/stop"
             android:layout_weight="1"
+            android:text="@string/stop"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txt" />
 
     </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/animation"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

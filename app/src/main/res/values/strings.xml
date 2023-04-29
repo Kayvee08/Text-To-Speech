@@ -2,4 +2,6 @@
     <string name="app_name">Text to Speech</string>
     <string name="speak">speak</string>
     <string name="stop">stop</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
 </resources>
